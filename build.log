@@ -4,14 +4,13 @@ Logfile initialized
 [INFO] Building testapp for Android ... one moment
 [INFO] Titanium SDK version: 1.7.2 (07/21/11 09:36 97c3689)
 [DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 2 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.063000 seconds on emulator to get ready
+[DEBUG] waited 0.047000 seconds on emulator to get ready
 [DEBUG] com.english.testapp installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: D:\titaniumworkspace\testapp\Resources\app.js => D:\titaniumworkspace\testapp\build\android\bin\assets\Resources\app.js
-[TRACE] COPYING CREATED FILE: D:\titaniumworkspace\testapp\Resources\table_view.js => D:\titaniumworkspace\testapp\build\android\bin\assets\Resources\table_view.js
+[TRACE] COPYING MODIFIED FILE: D:\titaniumworkspace\testapp\Resources\table_view.js => D:\titaniumworkspace\testapp\build\android\bin\assets\Resources\table_view.js
 [INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
 [INFO] Waiting for SDCard to become available..
@@ -20,3 +19,4 @@ Logfile initialized
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.english.testapp/.TestappActivity }
 Warning: Activity not started, its current task has been brought to the front
 
+[INFO] Relaunched testapp ... Application should be running.

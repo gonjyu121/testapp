@@ -1,7 +1,7 @@
 /**
  * @author Administrator
  */
-var win = Ti.UI.currentWindow;
+var win1 = Ti.UI.currentWindow;
 var data = [];
 var tableView = Ti.UI.createTableView({
     data:data
@@ -13,16 +13,16 @@ function updateTimeline (timeline) {
         var tweet = timeline[i];
         var row = Ti.UI.createTableViewRow(
             {
-                height: 150,
+                height: 'auto',
                 layout: 'vertical'
             }
         );
 
         var imageView = Ti.UI.createImageView(
             {
-                image: 'iphone/appicon.png',
+                image: tweet.user.profile_image_url,
                 width: 48,
-                height: 48,
+                height: 'auto',
                 top: 5,
                 left: 5
             }
@@ -32,7 +32,7 @@ function updateTimeline (timeline) {
         var nameLabel = Ti.UI.createLabel(
             {
                 width: 120,
-                height: 12,
+                height: 'auto',
                 left: 58,
                 top: -48,
                 fontSize: 6,
@@ -48,7 +48,7 @@ function updateTimeline (timeline) {
                 width: 257,
                 left: 58,
                 top: 1,
-                height: 100,
+                height: 'auto',
                 fontSize: 8
             }
         );
@@ -58,7 +58,7 @@ function updateTimeline (timeline) {
         var dateLabel = Ti.UI.createLabel(
             {
                 width: 200,
-                height: 12,
+                height: 'auto',
                 left: 58,
                 top: 5,
                 fontSize: 6
@@ -82,4 +82,4 @@ xhr.onload = function() {
 };
 xhr.send();
 
-win.add(tableView);
+win1.add(tableView);
